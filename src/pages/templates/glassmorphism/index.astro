@@ -50,19 +50,8 @@ import BaseLayout from '../../../layouts/Base.astro';
         <!-- Stats card -->
         <div class="bento-card glass-card">
           <div class="card-glow"></div>
-          <div class="stats-grid">
-            <div class="stat">
-              <div class="stat-num">600+</div>
-              <div class="stat-label">Klienten</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">97%</div>
-              <div class="stat-label">Erfolg</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">4.9★</div>
-              <div class="stat-label">Bewertung</div>
-            </div>
+          <div class="stats-grid stats-centered">
+            <div class="stat-num">600+ Klienten · 97% Erfolg · 4.9★ Bewertung</div>
           </div>
         </div>
 
@@ -104,7 +93,6 @@ import BaseLayout from '../../../layouts/Base.astro';
         <div class="bento-card bento-wide glass-card">
           <div class="card-glow"></div>
           <div class="testimonial-content">
-            <div class="quote-icon">"</div>
             <p>Lenens Glassmorphism-Ansatz hat meine Karriere revolutioniert. In 3 Monaten von Team Lead zu VP.</p>
             <div class="testimonial-author">
               <div class="author-avatar">JM</div>
@@ -538,26 +526,25 @@ import BaseLayout from '../../../layouts/Base.astro';
     color: var(--text-muted);
     font-weight: 400;
   }
-
-  /* Stats grid */
   .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    width: 100%;
-  }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 120px;
+      text-align: center;
+    }
 
-  .stat { text-align: center; }
-
-  .stat-num {
-    font-size: 1.75rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    white-space: nowrap;
-  }
+    .stats-centered .stat-num {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      white-space: nowrap;
+      flex-wrap: wrap;
+      line-height: 1.4;
+    }
 
   .stat-label {
     color: var(--text-muted);
