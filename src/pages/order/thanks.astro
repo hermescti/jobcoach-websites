@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/Base.astro';
+---
+
+<BaseLayout title="Bestellung bestätigt | Jobcoach Hub">
+  <div class="thanks-container">
+    <div class="thanks-card">
+      <div class="success-icon">✓</div>
+      <h1>Vielen Dank für deine Bestellung!</h1>
+      <p class="order-id">Order ID: <strong>{Astro.url.searchParams.get('orderId')}</strong></p>
+      <p class="message">
+        Deine Bestellung wurde erfolgreich übermittelt. Unser Team wird sich innerhalb von 24 Stunden bei dir melden.
+      </p>
+      <p class="next-steps">
+        <strong>Nächste Schritte:</strong>
+      </p>
+      <ul class="steps-list">
+        <li>1. Du erhältst eine Bestätigungs-E-Mail</li>
+        <li>2. Wir prüfen deine Angaben und melden uns bei Rückfragen</li>
+        <li>3. Du erhältst einen Link zur Zahlung und zum Onboarding</li>
+        <li>4. Nach Zahlungseingang starten wir mit der Entwicklung</li>
+      </ul>
+      <a href="/" class="btn btn-primary">Zurück zur Startseite</a>
+    </div>
+  </div>
+
+  <style>
+    .thanks-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    }
+
+    .thanks-card {
+      max-width: 600px;
+      width: 100%;
+      background: #1e293b;
+      padding: 3rem;
+      border-radius: 16px;
+      border: 1px solid rgba(59, 130, 246, 0.1);
+      text-align: center;
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(135deg, #3b82f6, #c9a959);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #f1f5f9, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .order-id {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .order-id strong {
+      color: #3b82f6;
+      font-family: monospace;
+    }
+
+    .message {
+      color: #f1f5f9;
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .next-steps {
+      color: #94a3b8;
+      font-size: 1rem;
+      margin: 2rem 0 1rem;
+      text-align: left;
+    }
+
+    .next-steps strong {
+      color: #f1f5f9;
+    }
+
+    .steps-list {
+      text-align: left;
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+
+    .steps-list li {
+      color: #94a3b8;
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.875rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      margin-top: 1rem;
+    }
+
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      .thanks-card {
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</BaseLayout>
