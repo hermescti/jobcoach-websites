@@ -15,9 +15,37 @@ const { title, description = '' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jobcoach-websites.vercel.app" />
+    <meta property="og:locale" content="de_DE" />
+    <!-- Cookie Consent -->
+    <meta name="cookie-policy" content="Diese Website verwendet nur technisch notwendige Cookies." />
   </head>
   <body>
+    <!-- Cookie Notice -->
+    <div id="cookie-notice" class="cookie-notice" style="display:none;">
+      <div class="cookie-content">
+        <p>Diese Website verwendet technisch notwendige Cookies. 
+          <a href="/datenschutz">Datenschutzerklärung</a>
+        </p>
+        <button id="cookie-accept">Verstanden</button>
+      </div>
+    </div>
     <slot />
+    <script>
+      const notice = document.getElementById('cookie-notice');
+      const accept = document.getElementById('cookie-accept');
+      if (localStorage.getItem('cookies_accepted') !== 'true') {
+        notice.style.display = 'block';
+      }
+      accept?.addEventListener('click', () => {
+        localStorage.setItem('cookies_accepted', 'true');
+        notice.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
 
@@ -42,5 +70,52 @@ const { title, description = '' } = Astro.props;
 
   a:hover {
     text-decoration: underline;
+  }
+
+  /* Cookie Notice */
+  .cookie-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem 2rem;
+    z-index: 9999;
+  }
+
+  .cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cookie-content p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+
+  .cookie-content a {
+    color: #6366f1;
+  }
+
+  #cookie-accept {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+  }
+
+  #cookie-accept:hover {
+    background: #4f46e5;
   }
 </style>
