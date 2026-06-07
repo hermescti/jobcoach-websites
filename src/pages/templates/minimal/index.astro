@@ -1,0 +1,377 @@
+---
+import BaseLayout from '../../layouts/Base.astro';
+---
+<BaseLayout title="Minimal Template | Jobcoach Website" description="Minimalistisches Design für Jobcoaches – clean, fokussiert, professionell.">
+  <div class="demo-page">
+    <header class="demo-header">
+      <div class="demo-badge">Minimal Template</div>
+      <a href="/order?template=minimal" class="btn-use">Dieses Template wählen →</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Thomas Bauer</h1>
+        <p class="tagline">Karriereberater · München</p>
+        <p class="bio">Ich begleite Menschen durch berufliche Übergänge – mit Klarheit, Ehrlichkeit und einem konsequenten Fokus auf das Wesentliche.</p>
+        <div class="cta-group">
+          <a href="#angebot" class="btn btn-primary">Angebot ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="philosophy">
+      <div class="philosophy-content">
+        <h2>Meine Philosophie</h2>
+        <p>Weniger ist mehr. In einer Welt voller Ablenkung und Rauschen setze ich auf das, was wirklich funktioniert: ehrliche Analyse, klare Strategien und konsequente Umsetzung.</p>
+        <p>Keine Buzzwords, keine leeren Versprechen. Nur Ergebnisse.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="angebot">
+      <h2>Leistungen</h2>
+      <div class="services-list">
+        <div class="service-item">
+          <div class="service-left">
+            <h3>Karriere-Beratung</h3>
+            <p>1:1 Begleitung für berufliche Neuorientierung. 6 Sessions à 60 Minuten.</p>
+          </div>
+          <div class="price">ab €890</div>
+        </div>
+        <div class="service-item">
+          <div class="service-left">
+            <h3>Bewerbungs-Unterstützung</h3>
+            <p>CV-Review, Anschreiben-Strategie, Interview-Coaching. Alles aus einer Hand.</p>
+          </div>
+          <div class="price">ab €390</div>
+        </div>
+        <div class="service-item">
+          <div class="service-left">
+            <h3>Executive Coaching</h3>
+            <p>Für Führungskräfte und Professionals. Langfristige Begleitung über 3 Monate.</p>
+          </div>
+          <div class="price">ab €2.400</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="approach">
+      <h2>Wie ich arbeite</h2>
+      <div class="approach-grid">
+        <div class="approach-item">
+          <h3>01</h3>
+          <p>Erstgespräch – kostenlos, 30 Minuten, unverbindlich.</p>
+        </div>
+        <div class="approach-item">
+          <h3>02</h3>
+          <p>Analyse deiner Situation und Definition deiner Ziele.</p>
+        </div>
+        <div class="approach-item">
+          <h3>03</h3>
+          <p>Gemeinsam entwickeln wir einen konkreten Aktionsplan.</p>
+        </div>
+        <div class="approach-item">
+          <h3>04</h3>
+          <p>Umsetzung mit regelmäßigen Check-ins und Anpassungen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-cta">
+      <h2>Interesse?</h2>
+      <p>Schreib mir eine kurze Nachricht. Ich melde mich innerhalb von 24 Stunden.</p>
+      <a href="/order?template=minimal" class="btn btn-primary btn-large">
+        Nachricht senden
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Thomas Bauer · Karriereberatung</p>
+      <p class="legal-links">
+        <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a>
+      </p>
+    </footer>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #111827;
+    color: #f9fafb;
+    line-height: 1.6;
+  }
+</style>
+
+<style>
+  :root {
+    --primary: #111827;
+    --accent: #6b7280;
+    --accent-light: #9ca3af;
+    --bg-dark: #111827;
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --text: #f9fafb;
+    --text-muted: #9ca3af;
+    --border: rgba(255, 255, 255, 0.08);
+  }
+
+  .demo-page { min-height: 100vh; }
+
+  .demo-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(17, 24, 39, 0.95);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .demo-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    color: var(--accent-light);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .btn-use {
+    background: white;
+    color: #111827;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+  }
+
+  .btn-use:hover {
+    background: #f3f4f6;
+    text-decoration: none;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2rem 4rem;
+  }
+
+  .hero-content {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .bio {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    line-height: 1.7;
+  }
+
+  .cta-group { display: flex; justify-content: center; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: white;
+    color: #111827;
+  }
+
+  .btn-primary:hover {
+    background: #f3f4f6;
+    text-decoration: none;
+  }
+
+  .btn-large { padding: 16px 32px; font-size: 1rem; }
+
+  /* Philosophy */
+  .philosophy {
+    padding: 6rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+  }
+
+  .philosophy-content { text-align: center; }
+
+  .philosophy h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  .philosophy p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  /* Services */
+  .services {
+    padding: 6rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+  }
+
+  .services h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .service-left h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-left p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1rem;
+    color: var(--accent-light);
+    font-weight: 500;
+    white-space: nowrap;
+    margin-left: 2rem;
+  }
+
+  /* Approach */
+  .approach {
+    padding: 6rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+  }
+
+  .approach h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .approach-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    margin-bottom: 0.75rem;
+  }
+
+  .approach-item p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  /* CTA */
+  .contact-cta {
+    padding: 6rem 2rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-cta h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .contact-cta p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .legal-links { margin-top: 0.5rem; }
+  .legal-links a { color: var(--text-muted); text-decoration: none; }
+  .legal-links a:hover { color: var(--accent-light); }
+
+  @media (max-width: 768px) {
+    .approach-grid { grid-template-columns: repeat(2, 1fr); }
+    .service-item { flex-direction: column; align-items: flex-start; }
+    .price { margin-left: 0; margin-top: 0.5rem; }
+    .hero h1 { font-size: 2.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    .approach-grid { grid-template-columns: 1fr; }
+  }
+</style>

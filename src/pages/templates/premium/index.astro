@@ -1,0 +1,530 @@
+---
+import BaseLayout from '../../layouts/Base.astro';
+---
+<BaseLayout title="Premium Template | Jobcoach Website" description="Premium Design für Jobcoaches – exklusiv, luxuriös, erstklassig.">
+  <div class="demo-page">
+    <header class="demo-header">
+      <div class="demo-badge">Premium Template</div>
+      <a href="/order?template=premium" class="btn-use">Dieses Template wählen →</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero premium-hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="logo-monogram">AF</div>
+        <div class="badge-premium">★ Premium</div>
+        <h1>Alexander Falk</h1>
+        <p class="subtitle">Senior Executive Coach · Frankfurt<br/>Für Leaders, die mehr wollen</p>
+        
+        <div class="credentials">
+          <span class="credential-badge">EMCC EIA</span>
+          <span class="credential-badge">ProCert</span>
+          <span class="credential-badge">20+ Jahre</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Prop -->
+    <section class="value-prop">
+      <div class="value-grid">
+        <div class="value-item">
+          <div class="value-num">€200K+</div>
+          <div class="value-label">Durchschnittl. Gehaltsplus meiner Klienten</div>
+        </div>
+        <div class="value-item">
+          <div class="value-num">94%</div>
+          <div class="value-label">Erfolgsquote bei Führungskräfte-Coaching</div>
+        </div>
+        <div class="value-item">
+          <div class="value-num">3 Monate</div>
+          <div class="value-label">Ø bis zur Beförderung oder Jobwechsel</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <div class="about-content">
+        <h2>Executive Background,<br/>Coach-Expertise</h2>
+        <p>20 Jahre in globalen Konzernen (Siemens, BMW, McKinsey-Alumni) haben mir gezeigt, was wirklich funktioniert – und was nicht.</p>
+        <p>Heute coache ich C-Suite Executives und High Potentials, die den nächsten Karriereschritt machen wollen: Vorstandspositionen, Aufsichtsräte, Founding Roles.</p>
+        <div class="certifications">
+          <div class="cert-item">
+            <span class="cert-label">Mitgliedschaften</span>
+            <span>EMCC · ICF · DBVC</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-label">Zertifizierungen</span>
+            <span>Master Coach (ECA) · Systemic Constellation</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-label">Ausbildung</span>
+            <span>MBA INSEAD · Psychologie (Uni Köln)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <h2>Exclusive Leistungen</h2>
+      <div class="services-grid">
+        <div class="service-card premium-card">
+          <div class="service-tier">I</div>
+          <h3>Executive Intensive</h3>
+          <p>3-monatiges 1:1 Programm für Vorstandsmitglieder und C-Level. Wöchentliche Sessions + Notfall-Support.</p>
+          <div class="price">ab €8.500<span>/Quartal</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-tier">II</div>
+          <h3>Career Acceleration</h3>
+          <p>6-wöchiges Programm für High Potentials. Ziel: Beförderung oder strategischer Jobwechsel.</p>
+          <div class="price">ab €3.800<span>/Programm</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-tier">III</div>
+          <h3>Board Advisory</h3>
+          <p>Langfristige Begleitung für Aufsichtsratsmandate und Supervisory Boards. Quarterly Meetings.</p>
+          <div class="price">ab €12.000<span>/Jahr</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>Ergebnisse zählen</h2>
+      <div class="testimonials-list">
+        <div class="testimonial-item">
+          <div class="testimonial-quote">"Alexander hat meine Verhandlungsstrategie für den Vorstandsposten revolutioniert. 40% Gehaltserhöhung inklusive."</div>
+          <div class="testimonial-meta">— CEO eines DAX-30 Unternehmens</div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-quote">"In 4 Monaten vom Abteilungsleiter zum Geschäftsführer – Alexanders Coaching war der Schlüssel."</div>
+          <div class="testimonial-meta">— Managing Director, Consulting</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-cta">
+      <h2>First Meeting on Invitation Only</h2>
+      <p>Ich nehme nur 12 Klienten pro Jahr an. Wenn du bereit bist für den nächsten Level, lass uns sprechen.</p>
+      <a href="/order?template=premium" class="btn btn-primary btn-large">
+        Kontakt aufnehmen ★
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Alexander Falk Executive Coaching · Frankfurt</p>
+      <p class="legal-links">
+        <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a>
+      </p>
+    </footer>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #030712;
+    color: #f1f5f9;
+    line-height: 1.6;
+  }
+</style>
+
+<style>
+  :root {
+    --gold: #d4af37;
+    --gold-light: #f4d58d;
+    --gold-dark: #aa8c2c;
+    --bg-dark: #030712;
+    --bg-card: rgba(212, 175, 55, 0.05);
+    --text: #f1f5f9;
+    --text-muted: #9ca3af;
+  }
+
+  .demo-page { min-height: 100vh; overflow-x: hidden; }
+
+  .demo-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(3, 7, 18, 0.95);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  }
+
+  .demo-badge {
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: var(--gold);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .btn-use {
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: #030712;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-use:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+    text-decoration: none;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
+      radial-gradient(ellipse at 80% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 40%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+  }
+
+  .logo-monogram {
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 60px rgba(212, 175, 55, 0.3);
+  }
+
+  .badge-premium {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: #030712;
+    padding: 6px 20px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+  }
+
+  .credentials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .credential-badge {
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    color: var(--gold);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  /* Value Prop */
+  .value-prop {
+    padding: 4rem 2rem;
+    background: rgba(212, 175, 55, 0.03);
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  }
+
+  .value-grid {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .value-item { text-align: center; }
+
+  .value-num {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: -0.02em;
+  }
+
+  .value-label {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    max-width: 150px;
+  }
+
+  /* About */
+  .about {
+    padding: 6rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about-content { text-align: center; }
+
+  .about h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+  }
+
+  .about p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  .certifications {
+    margin-top: 3rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cert-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.05);
+  }
+
+  .cert-label {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+
+  .cert-item span:last-child {
+    color: var(--gold);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* Services */
+  .services {
+    padding: 6rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .services h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .service-card.premium-card {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(212, 175, 55, 0.02));
+    border-color: rgba(212, 175, 55, 0.25);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+
+  .service-tier {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(212, 175, 55, 0.15);
+  }
+
+  .service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .service-card p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .price span { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 6rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+  }
+
+  .testimonials h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .testimonial-item {
+    background: var(--bg-card);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-meta {
+    color: var(--gold);
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  /* CTA */
+  .contact-cta {
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+
+  .contact-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .contact-cta p {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: #030712;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+    text-decoration: none;
+  }
+
+  .btn-large { padding: 18px 36px; font-size: 1rem; }
+
+  /* Footer */
+  .footer {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .legal-links { margin-top: 0.75rem; }
+  .legal-links a { color: var(--text-muted); text-decoration: none; }
+  .legal-links a:hover { color: var(--gold); }
+
+  @media (max-width: 768px) {
+    .value-grid { flex-direction: column; gap: 2rem; }
+    .hero h1 { font-size: 2.5rem; }
+    .cert-item { flex-direction: column; gap: 0.25rem; }
+  }
+</style>
