@@ -129,6 +129,9 @@ import BaseLayout from '../layouts/Base.astro';
     <!-- Footer -->
     <footer class="footer">
       <p>© 2026 Change-to-Impact · Für Jobcoaches in Deutschland, Österreich und der Schweiz</p>
+      <p class="legal-links">
+        <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a>
+      </p>
     </footer>
   </div>
 </BaseLayout>
@@ -427,6 +430,20 @@ import BaseLayout from '../layouts/Base.astro';
     color: var(--text-muted);
     font-size: 0.9rem;
     border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  .footer .legal-links {
+    margin-top: 0.75rem;
+  }
+  
+  .footer .legal-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .legal-links a:hover {
+    color: var(--accent);
   }
   
   /* Responsive */
